@@ -1,0 +1,42 @@
+ESSENZA BEAUTY STUDIO — INSTALAÇÃO DIRETA NO SERVBAY WINDOWS
+============================================================
+
+NÃO É PRECISO EXECUTAR .BAT, DIGITAR SQL OU CRIAR .ENV.
+
+1. ServBay: inicie PHP 8.4 e MySQL 8.4 (porta 3306).
+2. Extraia a pasta "essenza-beauty-studio" em C:\ServBay\www\
+   (ou em outra pasta de sua preferência).
+3. No site que VOCÊ JÁ CADASTROU no ServBay, configure:
+
+   Tipo: PHP
+   Versão: PHP 8.4
+   Domínio: mantenha o seu domínio local, como essenza.com
+   Diretório raiz: C:\ServBay\www\essenza-beauty-studio\public
+
+   DICA: escolha exatamente a pasta que contém o arquivo index.php.
+   A pasta public é OBRIGATÓRIA para proteger dados e código privados.
+
+4. Salve o site no ServBay e abra o endereço configurado no navegador.
+5. O primeiro acesso prepara o MySQL usando os dados locais já fornecidos.
+6. Na tela "Crie o acesso ao painel", informe seu nome, e-mail e uma
+   senha forte. O sistema abrirá o painel automaticamente.
+
+PRONTO! Site, agendamento e administração ficam no mesmo endereço.
+
+IMPORTANTE:
+- Na primeira visita, use o navegador no mesmo PC do ServBay.
+- Se a senha do MySQL foi alterada ou o serviço estiver parado, o site
+  exibirá uma tela para conferir as credenciais localmente.
+- A instalação preserva tabelas existentes e não apaga clientes/agendamentos.
+- Uma conta própria e aleatória do MySQL é criada para o site; o arquivo
+  com a credencial inicial do ServBay é excluído após o provisionamento.
+- Se instalar SOBRE a pasta anterior, preserve o arquivo .env existente.
+- NÃO coloque a raiz do projeto como raiz pública; use a subpasta public.
+- Fotos, profissionais e preços iniciais são fictícios e editáveis no painel.
+- Se aparecer 404 ao abrir /admin, confira a regra de rewrite do ServBay:
+  Default (PHP), apontando para public/index.php.
+
+LOGIN ADMINISTRATIVO:
+   <SEU_DOMINIO>/admin
+
+Para mais informações, leia README.md.
